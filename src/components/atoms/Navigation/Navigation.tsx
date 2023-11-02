@@ -1,10 +1,13 @@
+import { useRecoilState } from "recoil";
+import { visibleNavigation } from "@/recoil/commonAtom";
 import logo from "@/assets/images/logo.png";
 import logo2 from "@/assets/images/logo2.png";
 import "./Navigation.scss";
 
 const Navigation = () => {
+    const [visible, setVisible] = useRecoilState(visibleNavigation);
     return (
-        <section className="navigation">
+        <section className={visible ? "navigation active" : "navigation"}>
             <div className="container">
                 <div className="nav_header">
                     <h2 className="logo">
@@ -12,7 +15,10 @@ const Navigation = () => {
                             <img src={logo} />
                         </a>
                     </h2>
-                    <button className="close_btn">
+                    <button
+                        className="close_btn"
+                        onClick={() => setVisible(false)}
+                    >
                         <div className="hide">닫기</div>
                     </button>
                 </div>

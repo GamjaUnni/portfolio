@@ -4,7 +4,7 @@ import "./About.scss";
 
 const About = () => {
     return (
-        <section className="about ">
+        <section className="about">
             <div className="container">
                 <div className="gradient_wrap1">
                     <img src={gradient1} />
@@ -47,9 +47,21 @@ const About = () => {
                         저와 함께 일해보고 싶지 않으신가요? 😊
                     </p>
                 </div>
-                <div className="marquee_txt">
-                    Welcome to my portfolio. ㅡ
-                    <span>Welcome to my portfolio. ㅡ</span>
+            </div>
+            <div className="marquee_container">
+                <div className="marquee_wrap">
+                    <div className="slide original">
+                        <div className="marquee_txt">
+                            Welcome to my portfolio. ㅡ&nbsp;
+                            <span>Welcome to my portfolio. ㅡ&nbsp;</span>
+                        </div>
+                    </div>
+                    <div className="slide clone">
+                        <div className="marquee_txt">
+                            Welcome to my portfolio. ㅡ&nbsp;
+                            <span>Welcome to my portfolio. ㅡ&nbsp;</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

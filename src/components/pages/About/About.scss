@@ -1,68 +1,133 @@
 .about {
-    position: relative;
-    padding: 25.3rem 0 12rem;
+    .container {
+        position: relative;
+        padding: 25.3rem 0 12rem;
 
-    .gradient_wrap1 {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 83.1rem;
-        img {
-            width: 100%;
-        }
-    }
-
-    .about_txt {
-        .line {
-            position: relative;
-            width: 100%;
-            border-top: 1px solid #ffffff;
-        }
-        strong {
-            height: 28.7rem;
-            padding-top: 2.6rem;
-            display: inline-block;
-            font-size: 6.8rem;
-            font-weight: 600;
-            &.pad_508 {
-                padding-left: 50.8rem;
+        .gradient_wrap1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 83.1rem;
+            img {
+                width: 100%;
             }
         }
-        .arrow {
-            &::before {
-                content: "";
-                position: absolute;
-                bottom: -5.2rem;
-                left: 0;
-                width: 3.2rem;
-                height: 3.2rem;
-                background: url("../../../assets/images/icons/icon_arrow.png")
-                    no-repeat center / contain;
+
+        .about_txt {
+            .line {
+                position: relative;
+                width: 100%;
+                border-top: 1px solid #ffffff;
             }
-        }
-    }
-
-    .gradient_wrap2 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 83.1rem;
-        img {
-            width: 100%;
-        }
-    }
-
-    .txt_wrap {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 21.4rem 0;
-        p {
-            font-size: 2.8rem;
-
             strong {
-                font-size: 3.2rem;
+                height: 28.7rem;
+                padding-top: 2.6rem;
+                display: inline-block;
+                font-size: 6.8rem;
+                font-weight: 600;
+                &.pad_508 {
+                    padding-left: 50.8rem;
+                }
+            }
+            .arrow {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -5.2rem;
+                    left: 0;
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    background: url("../../../assets/images/icons/icon_arrow.png")
+                        no-repeat center / contain;
+                }
             }
         }
+
+        .gradient_wrap2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 83.1rem;
+            img {
+                width: 100%;
+            }
+        }
+
+        .txt_wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 21.4rem 0;
+            p {
+                font-size: 2.8rem;
+
+                strong {
+                    font-size: 3.2rem;
+                }
+            }
+        }
+    }
+
+    .marquee_container {
+        margin-top: -12rem;
+        padding: 4.4rem 0;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        overflow: hidden;
+
+        .marquee_wrap {
+            display: flex;
+
+            .slide {
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
+                gap: 4rem;
+
+                &.original {
+                    animation: 20s linear infinite normal none running
+                        infiniteAnimation1;
+                }
+                &.clone {
+                    animation: 20s linear infinite infiniteAnimation2;
+                }
+
+                .marquee_txt {
+                    display: inline-block;
+                    white-space: nowrap;
+
+                    font-size: 7.8rem;
+                    // text-transform: uppercase;
+
+                    span {
+                        -webkit-text-stroke: 0.4px #fff;
+                        color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes infiniteAnimation1 {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    50.1% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes infiniteAnimation2 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-200%);
     }
 }

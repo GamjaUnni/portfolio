@@ -1,11 +1,16 @@
 .home {
     height: 100vh;
+    min-width: 100%;
+    min-height: 92rem;
     .video_wrap {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        min-height: 100vh;
+        height: 100%;
+        // min-height: 100vh;
+        min-width: 100%;
+        min-height: 92rem;
         display: flex;
         flex-wrap: wrap;
         .video_bg {
@@ -90,62 +95,62 @@
     }
 }
 
-@media all and (max-width: 1660px) {
-    .video_wrap {
-        height: 57.4217vw;
-    }
-}
+// @media all and (max-width: 1660px) {
+//     .video_wrap {
+//         height: 57.4217vw;
+//     }
+// }
 
-@media all and (max-width: 1460px) {
-    .video_wrap {
-        height: 65.4217vw;
-    }
-}
+// @media all and (max-width: 1460px) {
+//     .video_wrap {
+//         height: 65.4217vw;
+//     }
+// }
 
-@media all and (max-width: 1150px) {
-    .video_wrap {
-        height: 83.0217vw;
-    }
-}
+// @media all and (max-width: 1150px) {
+//     .video_wrap {
+//         height: 83.0217vw;
+//     }
+// }
 
-@media all and (max-width: 1030px) {
-    .video_wrap {
-        height: 93.1217vw;
-    }
-}
+// @media all and (max-width: 1030px) {
+//     .video_wrap {
+//         height: 93.1217vw;
+//     }
+// }
 
-@media all and (max-width: 940px) {
-    .video_wrap {
-        height: 101.7217vw;
-    }
-}
+// @media all and (max-width: 940px) {
+//     .video_wrap {
+//         height: 101.7217vw;
+//     }
+// }
 
-@media all and (max-width: 840px) {
-    .video_wrap {
-        height: 113.4217vw;
-    }
-}
+// @media all and (max-width: 840px) {
+//     .video_wrap {
+//         height: 113.4217vw;
+//     }
+// }
 
-@media all and (max-width: 780px) {
-    .video_wrap {
-        height: 122.8217vw;
-    }
-}
+// @media all and (max-width: 780px) {
+//     .video_wrap {
+//         height: 122.8217vw;
+//     }
+// }
 
-@media all and (max-width: 700px) {
-    .video_wrap {
-        height: 136.6217vw;
-    }
-}
+// @media all and (max-width: 700px) {
+//     .video_wrap {
+//         height: 136.6217vw;
+//     }
+// }
 
-@media all and (max-width: 570px) {
-    .video_wrap {
-        height: 169.1217vw;
-    }
-}
+// @media all and (max-width: 570px) {
+//     .video_wrap {
+//         height: 169.1217vw;
+//     }
+// }
 
-@media all and (max-width: 390px) {
-    .video_wrap {
-        height: 175.4217vw;
-    }
-}
+// @media all and (max-width: 390px) {
+//     .video_wrap {
+//         height: 175.4217vw;
+//     }
+// }

@@ -7,6 +7,9 @@
     bottom: 0;
     background-color: #0a0a0a;
     z-index: 999;
+    &.active {
+        display: block;
+    }
 
     .nav_header {
         padding: 4.9rem 0;

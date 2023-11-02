@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { RecoilRoot } from "recoil";
 import "@/assets/styles/common.scss";
 import App from "./App.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
-        <App />
+        <RecoilRoot>
+            <App />
+        </RecoilRoot>
     </React.StrictMode>
 );
