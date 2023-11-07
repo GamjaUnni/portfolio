@@ -3,6 +3,7 @@ import Home from "@/components/pages/Home/Home";
 import Navigation from "@/components/atoms/Navigation/Navigation";
 import About from "@/components/pages/About/About";
 import Career from "@/components/pages/Career/Career";
+import Projects from "@/components/pages/Projects/Projects";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Home />
             <About />
             <Career />
+            <Projects />
         </>
     );
 }

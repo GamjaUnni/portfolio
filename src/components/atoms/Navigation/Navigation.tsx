@@ -26,24 +26,16 @@ const Navigation = () => {
 
             <ul className="menu_list">
                 <li>
-                    <a className="container txt">
-                        About<span>저를 소개합니다</span>
-                    </a>
+                    <a className="container txt">About</a>
                 </li>
                 <li>
-                    <a className="container txt">
-                        Career<span>퍼블리싱 작업물입니다</span>
-                    </a>
+                    <a className="container txt">Career</a>
                 </li>
                 <li>
-                    <a className="container txt">
-                        Projects<span>리액트 작업물입니다</span>
-                    </a>
+                    <a className="container txt">Projects</a>
                 </li>
                 <li>
-                    <a className="container txt">
-                        Contact<span>저를 소개합니다</span>
-                    </a>
+                    <a className="container txt">Contact</a>
                 </li>
             </ul>
 

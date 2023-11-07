@@ -7,19 +7,24 @@
     }
     .career_desc {
         padding-top: 1.4rem;
-        padding-bottom: 8rem;
+        padding-bottom: 7rem;
         font-size: 1.8rem;
         font-weight: 600;
     }
 
     .mySwiper {
         padding-left: 10%;
+        padding-top: 1rem;
         padding-bottom: 12rem;
         .mar_95 {
             margin-top: 9.5rem;
         }
         .slide_img {
             width: 30rem;
+            transition: all 0.3s;
+            &:hover {
+                transform: translateY(-1rem);
+            }
         }
 
         .swiper-button-prev {
@@ -45,6 +50,43 @@
         }
         .swiper-pagination-fraction {
             bottom: 0;
+            font-size: 1.6rem;
+            font-weight: 200;
+            .pagination_container {
+                .pagenation_sep {
+                    display: inline-block;
+                    margin: 0 1.2rem 0.5rem;
+                    width: 7rem;
+                    height: 0.1rem;
+                    background-color: #ffffff;
+                }
+            }
+        }
+        .swiper-button-prev.swiper-button-disabled,
+        .swiper-button-next.swiper-button-disabled {
+            opacity: 0;
+        }
+
+        .slide_title {
+            padding: 2.4rem 0 1.6rem;
+            font-size: 2rem;
+            color: #ebebeb;
+            line-height: 2.8rem;
+        }
+        .slide_tag {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -0.5rem;
+            li {
+                display: flex;
+                align-items: center;
+                padding: 0 1.2rem;
+                height: 3rem;
+                color: #cccccc;
+                border: 1px solid #959595;
+                border-radius: 3rem;
+                margin: 0.5rem;
+            }
         }
     }
 }

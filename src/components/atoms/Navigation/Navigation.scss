@@ -58,23 +58,23 @@
             font-weight: 600;
             cursor: pointer;
 
-            span {
-                position: relative;
-                display: inline-block;
-                padding-left: 3.8rem;
-                margin-left: 3.8rem;
-                font-size: 1.4rem;
-                font-weight: 500;
-                &::before {
-                    content: "·";
-                    position: absolute;
-                    left: 0;
-                    top: 10%;
-                    transform: translateY(-50%);
-                    width: 2px;
-                    height: 2px;
-                }
-            }
+            // span {
+            //     position: relative;
+            //     display: inline-block;
+            //     padding-left: 3.8rem;
+            //     margin-left: 3.8rem;
+            //     font-size: 1.4rem;
+            //     font-weight: 500;
+            //     &::before {
+            //         content: "·";
+            //         position: absolute;
+            //         left: 0;
+            //         top: 10%;
+            //         transform: translateY(-50%);
+            //         width: 2px;
+            //         height: 2px;
+            //     }
+            // }
         }
     }
 
