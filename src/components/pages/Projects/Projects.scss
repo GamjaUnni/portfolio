@@ -1,0 +1,103 @@
+.projects {
+    padding: 14rem 0;
+
+    .projects_title {
+        display: block;
+        font-size: 8.6rem;
+        font-weight: 800;
+    }
+    .projects_desc {
+        padding-top: 1.4rem;
+        padding-bottom: 7rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .projects_wrap {
+        padding-top: 9rem;
+        > li ~ li {
+            margin-top: 12rem;
+        }
+        > li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .projects_img {
+                width: 54.8rem;
+            }
+            .projects_container {
+                padding-left: 15.2rem;
+                &.right {
+                    padding-left: 0;
+                    padding-right: 15.2rem;
+                }
+                ul {
+                    display: flex;
+                    li {
+                        padding: 0 1.2rem;
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid #959595;
+                        color: #cccccc;
+                        border-radius: 3rem;
+                        height: 3rem;
+                    }
+                    li ~ li {
+                        margin-left: 1rem;
+                    }
+                }
+                span {
+                    margin-top: 7.2rem;
+                    display: block;
+                    font-size: 2.2rem;
+                    font-weight: 600;
+                }
+                .projects_txt {
+                    position: relative;
+                    display: inline-block;
+                    padding: 1.6rem 0 4rem;
+                    font-size: 7.2rem;
+                    font-weight: 600;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    &.plantopia::after {
+                        right: -17rem;
+                        width: 32rem;
+                        height: 32rem;
+                        background: url("../../../assets/images/gradient3.png")
+                            no-repeat center / contain;
+                    }
+                    &.rabbit::after {
+                        left: -17rem;
+                        width: 32rem;
+                        height: 32rem;
+                        background: url("../../../assets/images/gradient4.png")
+                            no-repeat center / contain;
+                    }
+                }
+                p {
+                    padding-bottom: 6rem;
+                    color: #cccccc;
+                    font-size: 1.8rem;
+                    line-height: 2.9rem;
+                }
+                a {
+                    display: inline-block;
+                    padding: 0 7.2rem 0 4rem;
+                    border: 1px solid #ffffff;
+                    border-radius: 3rem;
+                    height: 5.6rem;
+                    line-height: 5.6rem;
+                    font-size: 2rem;
+                    font-weight: 500;
+                    background: url("../../../assets/images/icons/icon_arrow_projects.png")
+                        no-repeat right 3rem center / 3.4rem;
+                }
+            }
+        }
+    }
+}
