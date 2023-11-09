@@ -13,6 +13,7 @@
         min-height: 92rem;
         display: flex;
         flex-wrap: wrap;
+        overflow: hidden;
         .video_bg {
             position: absolute;
             top: 0;
@@ -22,7 +23,6 @@
             background: #000 url("../../../assets/images/wave.png") no-repeat
                 50% 50%;
             background-size: cover;
-            // object-fit: cover;
         }
 
         .wave {

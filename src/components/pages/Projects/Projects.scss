@@ -101,3 +101,15 @@
         }
     }
 }
+
+@media all and (max-width: 1400px) {
+    .projects {
+        .projects_wrap {
+            > li {
+                .projects_img {
+                    width: 40rem;
+                }
+            }
+        }
+    }
+}

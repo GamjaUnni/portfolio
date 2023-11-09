@@ -1,0 +1,94 @@
+.contact {
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 7.8rem;
+
+    .gradient_wrap {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60rem;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .contact_txt {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        li ~ li {
+            border-top: 1px solid #fff;
+            justify-content: center;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            height: 20rem;
+            font-size: 8.4rem;
+            span {
+                display: inline-block;
+                padding-right: 9.4rem;
+                margin-right: 1rem;
+                background: url("../../../assets/images/circle.png") no-repeat
+                    right center / 8.4rem;
+            }
+        }
+    }
+
+    .nav_footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 4.8rem 0;
+        h3 {
+            height: 9.5rem;
+            img {
+                height: 100%;
+                display: block;
+                cursor: pointer;
+            }
+        }
+
+        ul {
+            display: flex;
+            padding-top: 2.8rem;
+            li ~ li {
+                margin-left: 13.5rem;
+            }
+            strong {
+                display: block;
+                padding-bottom: 1.2rem;
+                font-size: 1.6rem;
+            }
+            span {
+                display: inline-block;
+                font-size: 1.6rem;
+                &.Instagram {
+                    padding: 0.2rem 0 0.2rem 3.233rem;
+
+                    background: url("../../../assets/images/icons/icon_instagram.png")
+                        no-repeat center left / 2.6rem;
+                }
+                &.github {
+                    padding: 0.2rem 0 0.2rem 2.6rem;
+                    background: url("../../../assets/images/icons/icon_github.png")
+                        no-repeat center left / 2rem;
+                }
+                &.velog {
+                    margin-left: 1.6rem;
+                    padding: 0.2rem 0 0.2rem 4.2rem;
+                    background: url("../../../assets/images/icons/icon_velog.png")
+                        no-repeat 1.6rem center / 2rem;
+                }
+            }
+        }
+    }
+
+    .rights_txt {
+        padding-top: 15rem;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+}

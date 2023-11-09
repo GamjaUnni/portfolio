@@ -5,10 +5,11 @@ const Home = () => {
     return (
         <section className="home">
             <div className="video_wrap">
-                <div className="video_bg"></div>
-                <video className="wave" autoPlay loop muted playsInline>
-                    <source src={wave} type="video/mp4" />
-                </video>
+                <div className="video_bg">
+                    <video className="wave" autoPlay loop muted playsInline>
+                        <source src={wave} type="video/mp4" />
+                    </video>
+                </div>
             </div>
             <div className="container">
                 <div className="text_wrap">
