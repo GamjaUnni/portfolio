@@ -133,3 +133,29 @@
         font-weight: 500;
     }
 }
+
+@media all and (max-width: 1200px) {
+    .navigation {
+        .nav_footer,
+        .rights_txt {
+            display: none;
+        }
+    }
+}
+
+@media all and (max-width: 900px) {
+    .navigation {
+        .nav_header {
+            padding: 3.2rem 0;
+            .logo {
+                height: 4.8rem;
+            }
+        }
+
+        .menu_list {
+            .txt {
+                font-size: 4.8rem;
+            }
+        }
+    }
+}

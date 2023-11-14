@@ -76,6 +76,23 @@ const Career = () => {
                     swiper.navigation.init();
                     swiper.navigation.update();
                 }}
+                breakpoints={{
+                    390: {
+                        slidesPerView: 1,
+                    },
+                    600: {
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    960: {
+                        slidesPerView: 4,
+                    },
+                    1720: {
+                        slidesPerView: 5,
+                    },
+                }}
             >
                 <SwiperSlide>
                     <a href="#none">

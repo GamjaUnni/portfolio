@@ -131,3 +131,118 @@
         transform: translateX(-200%);
     }
 }
+
+@media all and (max-width: 1260px) {
+    .about {
+        .container {
+            .gradient_wrap1 {
+                width: 70rem;
+            }
+
+            .about_txt {
+                strong {
+                    &.pad_508 {
+                        display: flex;
+                        padding-left: 0;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 950px) {
+    .about {
+        .container {
+            .gradient_wrap1 {
+                width: 50rem;
+            }
+            .gradient_wrap2 {
+                width: 60rem;
+                bottom: 13rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 690px) {
+    .about {
+        .container {
+            padding: 12rem 0 9rem;
+            .gradient_wrap1 {
+                right: auto;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 38rem;
+            }
+            .gradient_wrap2 {
+                width: 38rem;
+                bottom: 18rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .about_txt {
+                strong {
+                    font-size: 4.8rem;
+                    height: 17.6rem;
+                }
+            }
+            .txt_wrap {
+                padding: 14.8rem 0;
+                p {
+                    font-size: 2rem;
+                    line-height: 3rem;
+                    strong {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 430px) {
+    .about {
+        .container {
+            .gradient_wrap1 {
+                width: 34rem;
+            }
+            .gradient_wrap2 {
+                width: 34rem;
+            }
+            .about_txt {
+                strong {
+                    font-size: 3.4rem;
+                    &.pad_508 {
+                        display: flex;
+                        padding-left: 0;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            .txt_wrap {
+                padding: 12rem 0;
+                p {
+                    font-size: 1.6rem;
+                    line-height: 3rem;
+                    strong {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        .marquee_container {
+            margin-top: -10rem;
+            padding: 2.8rem;
+            .marquee_wrap {
+                .slide {
+                    .marquee_txt {
+                        font-size: 4.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

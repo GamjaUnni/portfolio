@@ -42,7 +42,7 @@ const Projects = () => {
                         </div>
                     </li>
 
-                    <li>
+                    <li className="reverse">
                         <div className="projects_container right">
                             <ul>
                                 <li>React</li>

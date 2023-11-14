@@ -113,3 +113,135 @@
         }
     }
 }
+
+@media all and (max-width: 1170px) {
+    .projects {
+        .projects_wrap {
+            > li {
+                .projects_container {
+                    padding-left: 8rem;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1090px) {
+    .projects {
+        .projects_wrap {
+            > li {
+                flex-direction: column;
+                position: relative;
+                text-align: center;
+
+                &.reverse {
+                    flex-direction: column-reverse;
+                }
+
+                .projects_container {
+                    padding-left: 0;
+                    padding-top: 4rem;
+                    ul {
+                        justify-content: center;
+                    }
+                    span {
+                        margin-top: 4rem;
+                    }
+
+                    &.right {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 900px) {
+    .projects {
+        padding-top: 7rem;
+        .projects_title {
+            font-size: 7.2rem;
+        }
+        .projects_desc {
+            padding-bottom: 0;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media all and (max-width: 700px) {
+    .projects {
+        .projects_wrap {
+            > li {
+                .projects_img {
+                    width: 30rem;
+                }
+                .projects_container {
+                    ul {
+                        li {
+                            font-size: 1.2rem;
+                        }
+                    }
+                    a {
+                        padding: 0 6rem 0 3rem;
+                        font-size: 1.6rem;
+                        background-position: right 2rem center;
+                    }
+                    p {
+                        font-size: 1.6rem;
+                    }
+                    span {
+                        font-size: 1.8rem;
+                    }
+                    .projects_txt {
+                        font-size: 4.8rem;
+                        &.plantopia {
+                            &::after {
+                                right: auto;
+                                left: -10rem;
+                                width: 24rem;
+                                height: 24rem;
+                            }
+                        }
+                        &.rabbit {
+                            &::after {
+                                left: -10rem;
+                                width: 24rem;
+                                height: 24rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 430px) {
+    .projects {
+        padding-top: 5rem;
+        .projects_title {
+            font-size: 4.8rem;
+        }
+        .projects_desc {
+            font-size: 1.4rem;
+        }
+        .projects_wrap {
+            > li {
+                .projects_container {
+                    ul {
+                        flex-wrap: wrap;
+                        margin: -0.5rem;
+                        li {
+                            margin: 1rem;
+                        }
+                        li ~ li {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

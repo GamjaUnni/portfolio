@@ -92,3 +92,89 @@
         font-weight: 500;
     }
 }
+
+@media all and (max-width: 912px) {
+    .contact {
+        padding-bottom: 5.8rem;
+        .gradient_wrap {
+            width: 40rem;
+        }
+
+        .contact_txt {
+            li {
+                font-size: 5.8rem;
+                span {
+                    background-size: 7rem;
+                    background-position: right 0.6rem center;
+                }
+            }
+        }
+
+        .nav_footer {
+            h3 {
+                height: 7.2rem;
+            }
+            ul {
+                flex-direction: column;
+                li ~ li {
+                    margin-left: 0;
+                    margin-top: 4rem;
+                }
+                strong {
+                    font-size: 1.4rem;
+                }
+                span {
+                    font-size: 1.2rem;
+                    &.Instagram {
+                        padding-left: 2.7rem;
+                        background-size: 1.8rem;
+                    }
+                    &.velog {
+                        padding-left: 2.7rem;
+                        background-size: 1.8rem;
+                        background-position: left 0 center;
+                    }
+                    &.github {
+                        padding-left: 2.7rem;
+                        background-size: 1.8rem;
+                    }
+                }
+            }
+        }
+
+        .rights_txt {
+            padding-top: 10rem;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media all and (max-width: 540px) {
+    .contact {
+        .contact_txt {
+            li {
+                font-size: 4.8rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 430px) {
+    .contact {
+        .gradient_wrap {
+            width: 32rem;
+        }
+
+        .contact_txt {
+            li {
+                font-size: 3.4rem;
+                span {
+                    padding-right: 5.2rem;
+                    margin-right: 0rem;
+                    background-size: 4rem;
+                    background-position: right 0.6rem center;
+                }
+            }
+        }
+    }
+}

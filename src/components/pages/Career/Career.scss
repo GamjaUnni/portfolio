@@ -90,3 +90,27 @@
         }
     }
 }
+
+@media all and (max-width: 900px) {
+    .career {
+        padding-top: 12rem;
+        .career_title {
+            font-size: 7.2rem;
+        }
+        .career_desc {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media all and (max-width: 430px) {
+    .career {
+        padding-top: 10rem;
+        .career_title {
+            font-size: 4.8rem;
+        }
+        .career_desc {
+            font-size: 1.4rem;
+        }
+    }
+}
