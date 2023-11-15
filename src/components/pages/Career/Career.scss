@@ -103,6 +103,41 @@
     }
 }
 
+@media all and (max-width: 767px) {
+    .career {
+        .swiper-slide {
+            text-align: center;
+        }
+        .mySwiper {
+            padding-left: 0;
+            .slide_tag {
+                justify-content: center;
+            }
+            .mar_95 {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    .career {
+        .mySwiper {
+            padding-bottom: 7rem;
+            .swiper-button-prev,
+            .swiper-button-next {
+                width: 6.2rem;
+                top: 98%;
+                z-index: 999;
+            }
+
+            .swiper-pagination-fraction {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
 @media all and (max-width: 430px) {
     .career {
         padding-top: 10rem;

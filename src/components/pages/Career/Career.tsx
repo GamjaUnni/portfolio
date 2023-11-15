@@ -42,7 +42,7 @@ const Career = () => {
                 slidesPerView={5}
                 slidesPerGroup={4}
                 spaceBetween={60}
-                mousewheel={true}
+                // mousewheel={true}
                 speed={1600}
                 pagination={{
                     type: "fraction",
@@ -77,20 +77,25 @@ const Career = () => {
                     swiper.navigation.update();
                 }}
                 breakpoints={{
-                    390: {
+                    0: {
                         slidesPerView: 1,
-                    },
-                    600: {
-                        slidesPerView: 2,
+                        slidesPerGroup: 1,
                     },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
+                        slidesPerGroup: 2,
                     },
-                    960: {
+                    1000: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3,
+                    },
+                    1320: {
                         slidesPerView: 4,
+                        slidesPerGroup: 4,
                     },
                     1720: {
                         slidesPerView: 5,
+                        slidesPerGroup: 4,
                     },
                 }}
             >
