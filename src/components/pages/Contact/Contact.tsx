@@ -5,7 +5,7 @@ import "./Contact.scss";
 
 const Contact = () => {
     return (
-        <section className="contact">
+        <section className="contact" id="contact">
             <div className="container">
                 <div className="gradient_wrap">
                     <img src={gradient5} />

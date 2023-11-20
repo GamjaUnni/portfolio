@@ -26,16 +26,24 @@ const Navigation = () => {
 
             <ul className="menu_list">
                 <li>
-                    <a className="container txt">About</a>
+                    <a href="#about" className="container txt">
+                        About
+                    </a>
                 </li>
                 <li>
-                    <a className="container txt">Career</a>
+                    <a href="#career" className="container txt">
+                        Career
+                    </a>
                 </li>
                 <li>
-                    <a className="container txt">Projects</a>
+                    <a href="#projects" className="container txt">
+                        Projects
+                    </a>
                 </li>
                 <li>
-                    <a className="container txt">Contact</a>
+                    <a href="#contact" className="container txt">
+                        Contact
+                    </a>
                 </li>
             </ul>
 

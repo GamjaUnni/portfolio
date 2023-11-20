@@ -5,7 +5,7 @@ import "./Projects.scss";
 
 const Projects = () => {
     return (
-        <section className="projects">
+        <section className="projects" id="projects">
             <div className="container">
                 <strong className="projects_title">Project ㅡ</strong>
                 <p className="projects_desc">리액트로 작성한 작업물입니다.</p>

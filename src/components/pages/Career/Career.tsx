@@ -31,7 +31,7 @@ const Career = () => {
     const slideSectionNextBtn = useRef<HTMLDivElement>(null);
 
     return (
-        <section className="career">
+        <section className="career" id="career">
             <div className="container">
                 <strong className="career_title">Career ㅡ</strong>
                 <p className="career_desc">
