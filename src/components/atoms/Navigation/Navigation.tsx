@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { visibleNavigation } from "@/recoil/commonAtom";
 import logo from "@/assets/images/logo.png";
@@ -6,6 +7,14 @@ import "./Navigation.scss";
 
 const Navigation = () => {
     const [visible, setVisible] = useRecoilState(visibleNavigation);
+    useEffect(() => {
+        if (visible) {
+            document.body.className = "hidden";
+        } else {
+            document.body.className = "";
+        }
+    }, [visible]);
+
     return (
         <section className={visible ? "navigation active" : "navigation"}>
             <div className="container">
@@ -26,22 +35,38 @@ const Navigation = () => {
 
             <ul className="menu_list">
                 <li>
-                    <a href="#about" className="container txt">
+                    <a
+                        href="#about"
+                        className="container txt"
+                        onClick={() => setVisible(false)}
+                    >
                         About
                     </a>
                 </li>
                 <li>
-                    <a href="#career" className="container txt">
+                    <a
+                        href="#career"
+                        className="container txt"
+                        onClick={() => setVisible(false)}
+                    >
                         Career
                     </a>
                 </li>
                 <li>
-                    <a href="#projects" className="container txt">
+                    <a
+                        href="#projects"
+                        className="container txt"
+                        onClick={() => setVisible(false)}
+                    >
                         Projects
                     </a>
                 </li>
                 <li>
-                    <a href="#contact" className="container txt">
+                    <a
+                        href="#contact"
+                        className="container txt"
+                        onClick={() => setVisible(false)}
+                    >
                         Contact
                     </a>
                 </li>
